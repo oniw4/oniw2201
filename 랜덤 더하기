@@ -1,0 +1,9 @@
+import random
+a = random.randint(1,30)
+b = random.randint(1,30)
+print(a,"+",b)
+n = int(a+b)
+if n == a + b:
+    print("정답입니다")
+else:
+    print("오답입니다")
