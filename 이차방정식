@@ -1,0 +1,19 @@
+q = input("a=")
+w = input("b=")
+e = input("c=")
+
+q = float(a)
+w = float(b)
+e = float(c)
+
+import math
+g = math.sqrt(b^2-4*a*c)
+
+if g < 0:
+    print("해가없다")
+
+if g = 0:
+    print(-b/2*a)
+
+if g > 0:
+    print(-b+amth.sqrt(b^2-4*a*c)/(2*a)),print(-b-amth.sqrt(b^2-4*a*c)/(2*a))
