@@ -1,0 +1,18 @@
+a = random.randiint(1,31)
+b = input("숫자를 입력하세요")
+
+if a == b
+while True:
+    print("정답")
+    break
+
+else:
+    if a < b
+    print("입력한 숫자보다 커요")
+    
+    if a > b
+    print("입력한 숫자보다 작아요")
+    
+    print('')
+    print('다시입력하세요')
+    print('')
