@@ -1,0 +1,7 @@
+text_1 = open('element.txt' , encoding = 'utf8')
+list_1 = text_1.readlines()
+text_1.close
+del list_1[0]
+
+list_1 = [data.strip() for data in list_1]
+print(list_1)
