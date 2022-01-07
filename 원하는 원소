@@ -1,0 +1,22 @@
+text_1 = open('element.txt' , encoding = 'utf8')
+list_1 = text_1.readlines()
+text_1.close
+
+list_1 = [data.strip() for data in list_1]
+list_2 = [data.split() for data in list_1]
+
+while 1:
+    print('1번부터 20번싸지의 원소 중')
+    num = int(input('검색하고자 하는 원소의 번호는? :'))
+    if num in range(1,21):
+        print(" ")
+        print(list_2[num-1][0], '번 원소')
+        print('원소 기호 :' , list_2[num-1][1])
+        print('원소 이름 :' , list_2[num-1][2])
+        break
+    else:
+        print('')
+        print('다시입력하세요.')
+        print('')
+print('')
+print('종료합니다')
