@@ -1,18 +1,17 @@
-a = random.randiint(1,31)
-b = input("숫자를 입력하세요")
+import random
+a = random.randint(0,31)
 
-if a == b
-while True:
-    print("정답")
-    break
-
-else:
-    if a < b
-    print("입력한 숫자보다 커요")
+while 1:
+    print("0부터 31까지의 숫자들 중")
+    b = int(input("입력하고 싶은 숫자는? : "))
     
-    if a > b
-    print("입력한 숫자보다 작아요")
-    
-    print('')
-    print('다시입력하세요')
-    print('')
+    if a == b:
+        print("올ㅋ 정답")
+        break
+        
+else: 
+    if a < b:
+        print("다운")
+        
+    if a > b:
+        prinnt("업")
