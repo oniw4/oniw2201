@@ -1,0 +1,43 @@
+import turtle as t
+import random
+
+def poly(x, y):
+    t.up()
+    t.goto(x, y)
+    fig = t.textinput("도형의 종류", "원=1, 정사각형=2, 정육각형=3 중 선택")
+    leng = t.numinput("length", "How long(10~300)?", 50, minval=10, maxval=300)
+    
+    if fig == "1":
+        t.color('pink')
+        t.begin_fill()
+        t.circle(leng)
+        t.end_fill()
+    elif fig == "2":
+        t.color('sky blue')
+        t.begin_fill()
+        for i in range(4):
+            t.fd(leng)
+            t.rt(90)
+        t.end_fill()
+    elif fig == "3":
+        t.color('yellow')
+        t.begin_fill()
+        for i in range(6):
+            t.fd(leng)
+            t.rt(60)
+        t.end_fill()
+        
+def go_undo(x, y):
+    t.undo()
+    
+t.setup(1000, 1000)
+t.shape('turtle')
+t.shapesize(0.5, 0.5)
+t.up()
+
+t.onscreenclick(poly, btn = 1)
+t.onscreenclick(go_undo, btn = 3)
+
+t.listen()
+t.done()
+t.mainloop()
