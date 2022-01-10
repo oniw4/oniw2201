@@ -1,0 +1,18 @@
+import turtle as t
+import random
+
+def gogo(x, y):
+    color_list = ['red', 'blue', 'green', 'purple']
+    color_num = random.randint(0, 3)
+    t.pencolor(color_list[color_num])
+    t.stamp()
+    t.goto(x, y)
+    t.write(str(x) +","+str(y))
+    
+t.setup(500,500)
+t.shape('circle')
+t.shapesize(0.3, 0.3)
+
+t.onscreenclick(gogo)
+t.listen()
+t.mainloop()
