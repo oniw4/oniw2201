@@ -1,0 +1,16 @@
+score = model.evaluate(X_test, Y_test)
+print('Test score:', score[0])
+print('Test acceracy:', score[1])
+
+
+
+predicted_classes = np.argmax(model.predict(X_test), axis = 1)
+correct_indices= np.nonzero(predicted_classes == y_test)[0]
+incorrect_indices = np.nonzero(predicted_classes != y_test)[0]
+
+plt.figure()
+for i in range(9):
+    plt.subplot(3,3,i+1)
+    correct = correst_indices[i]
+    pltimshow(X_test[correct].reshape(28,28), cmap='gray')
+    plt.title("Predicted {}, Class{}".format(predicted_))
