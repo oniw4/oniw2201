@@ -1,0 +1,8 @@
+X_train = x_train.reshape(60000, 784)
+X_test = x_test.reshape(10000, 784)
+X_train = X_train.astype('float32')
+X_test = X_test.astype('float32')
+X_train /= 255
+X_test /= 255
+print("X Traning matrix shape", X_train.shape)
+print("X Testing matrix shape", X_test.shape)
